@@ -10,38 +10,18 @@ $ npm install vue-model-box
 Then use it:
 ```Javascript
 // ES6 mudule
-import ModelBox from 'vue-model-box';
+import ModelBox from 'vue-model-box/src/modelBox';
 
-// CommonJS
-const ModelBox = require('vue-model-box').default;
 ```
 
-# Usage
-Open an ModelBox:
-```Javascript
-ModelBox.open();
-```
-
-Open an ModelBox with a string:
-```Javascript
-ModelBox.open('Loading...');
-```
-
-Open an ModelBox with an object:
-```Javascript
-ModelBox.open({ text:'Loading...', spinnerType: 'fading-circle' });
-```
-
-Then close it:
-```Javascript
-ModelBox.close();
-```
 
 # API
-| Option      | Description    | Value                                                       | Default |
-|-------------|----------------|-------------------------------------------------------------|---------|
-| text        | model-box text | String                                                      |         |
-| spinnerType | spinner type   | 'snake', 'fading-circle', 'double-bounce', 'triple-bounce'  | 'snake' |
+| Option            | Description           | Value                     | Default |
+|-------------------|-----------------------|---------------------------|---------|
+| title             | model-box title       | String                    | '提示'  |
+| message           | message show          |  String                   |         |
+| buttonText        | botton  text          |  String                   |  '确定' |
+| @modelBoxClicked  | clicked botton event  |                           |         |
 
 # License
 MIT

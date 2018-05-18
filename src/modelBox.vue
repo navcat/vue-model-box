@@ -62,6 +62,7 @@ export default {
     .btn-footer{
       .btn{
         width: 80%;
+        background-color: #FF8A66;
       }
     }
   }

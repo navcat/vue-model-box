@@ -4,8 +4,8 @@ const ModelBox = Vue.extend(require('./modelBox.vue'))
 let instance
 let timer
 
-module.exports = {
-  open (options = {}) {
+export default {
+  open(options = {}) => {
     if (!instance) {
       instance = new ModelBox({
         el: document.createElement('div')
@@ -26,7 +26,7 @@ module.exports = {
     })
   },
 
-  close () {
+  close() => {
     if (instance) {
       Vue.nextTick(() => {
         instance.visible = false
@@ -38,4 +38,7 @@ module.exports = {
       })
     }
   }
+
 }
+  
+
